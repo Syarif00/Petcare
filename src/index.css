@@ -6,6 +6,7 @@
   font-family: "Lexend Deca", sans-serif;
   font-family: "Nunito", sans-serif;
   margin: 5px;
+  scroll-behavior: smooth;
 }
 
 #Jumbotron img {
@@ -36,3 +37,4 @@ button img {
 .custom-shape-divider-top-1690365700 .shape-fill {
   fill: #fff8f9;
 }
+

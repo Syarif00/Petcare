@@ -64,15 +64,21 @@ const App = () => {
     <>
       <div className="container mx-auto" id="Home">
         <nav>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between ">
             <div className="logo">
               <h1 className="text-4xl font-bold">PetCare</h1>
             </div>
             <div className="menu">
-              <ul className="flex gap-5 font-bold">
-                <li className="mr-4">Home</li>
-                <li className="mr-4">Services</li>
-                <li className="mr-4">About Us</li>
+              <ul className="flex gap-5 font-bold ">
+                <li className="mr-4">
+                  <a href="/">Home</a>
+                </li>
+                <li className="mr-4">
+                  <a href="#Services">Services</a>
+                </li>
+                <li className="mr-4">
+                  <a href="#cta">About Us</a>
+                </li>
               </ul>
             </div>
             <div className="account ">
@@ -96,7 +102,10 @@ const App = () => {
               pecinta hewan.
             </p>
             <div className="flex justify-center py-5 ">
-              <button className="flex items-center px-5 py-2 rounded-lg hover:bg-secondary bg-primary">
+              <a
+                href="#Services"
+                className="flex items-center px-5 py-2 rounded-lg hover:bg-tertiary bg-primary"
+              >
                 <img
                   src={step}
                   alt=""
@@ -106,7 +115,7 @@ const App = () => {
                 <span className="text-sm font-bold text-white">
                   Our Services
                 </span>
-              </button>
+              </a>
             </div>
             <div className="flex justify-between">
               <div className="relative flex items-center justify-between border-4 rounded-xl border-secondary">
@@ -168,7 +177,7 @@ const App = () => {
                     </div>
                     <div className="flex flex-col justify-between">
                       <p className="text-sm hover:text-white">{item.desc}</p>
-                      <a href="">
+                      <a href="#cta">
                         <span className="block py-2 font-extrabold ms-0 hover:text-tertiary">
                           Get Services
                         </span>
@@ -196,14 +205,15 @@ const App = () => {
                 Membantu anda mendapatkan pelayanan kesehatan dari rumah dengan
                 dokter dan perawat yang berpengalaman
               </p>
-              <button
-                className="p-2 rounded-lg bg-primary"
+              <a
+                className="p-2 text-center rounded-lg bg-primary"
                 style={{ width: 170 }}
+                href="whatsapp://send?text=Hello&phone=+6281226465547"
               >
                 <span className="text-sm font-bold text-white">
                   Our Services
                 </span>
-              </button>
+              </a>
             </div>
             <img
               src={sub1}
@@ -258,12 +268,30 @@ const App = () => {
           <div className="">
             <h1 className="text-xl font-extrabold text-center">Useful Links</h1>
             <ul className="flex flex-col">
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Shop</li>
-              <li>FAQ</li>
-              <li>Delivery</li>
+              <li>
+                <a href="#Jumbotron">Home</a>
+              </li>
+              <li>
+                <a href="#cta">About</a>
+              </li>
+              <li>
+                <a href="#Services">Services</a>
+              </li>
+              <li>
+                <a href="whatsapp://send?text=Hello&phone=+6281226465547">
+                  Shop
+                </a>
+              </li>
+              <li>
+                <a href="whatsapp://send?text=Hello&phone=+6281226465547">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="whatsapp://send?text=Hello&phone=+6281226465547">
+                  Delivery
+                </a>
+              </li>
             </ul>
           </div>
           <div className="">
