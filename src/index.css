@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Nunito", sans-serif;
+  margin: 5px;
+}
+
+#Jumbotron img {
+  width: 30%;
+}
+
+button img {
+  width: 30%;
+}
+
+.custom-shape-divider-top-1690365700 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1690365700 svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 99px;
+}
+
+.custom-shape-divider-top-1690365700 .shape-fill {
+  fill: #fff8f9;
+}
